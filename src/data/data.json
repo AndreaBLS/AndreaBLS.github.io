@@ -4,6 +4,7 @@
     "name": "Graham",
     "email": "Graham@fakemail.org",
     "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "image": "./image/5.jpg",
     "albums": {
       "album1": "albumOne",
       "album2": "albumTwo",
