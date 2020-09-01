@@ -5,10 +5,13 @@ nav {
   background-color: grayscale($color: #000000);
   color: white;
   display:flex;
+  
   justify-content: space-around;
-  div {
-    margin-top: 2%;
+  div div{
+    margin-top: 25px;
+    color: white;
     font-family: 'Bebas Neue', cursive;
+    /* text-decoration: none; */
   }
 }
 .logo{
