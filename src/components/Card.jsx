@@ -6,7 +6,7 @@ export default function ({image}) {
     <div className="card">
       <div className="image">
         <Link to="/artist">
-          <img src={image} alt="image" />
+          <img src= {`../images/${image}`} alt="image" />
         </Link>
       </div>
 
