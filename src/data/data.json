@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Graham",
+    "email": "Graham@fakemail.org",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "albums": {
+      "album1": "albumOne",
+      "album2": "albumTwo",
+      "album3": "albumThree",
+      "album4": "albumFour"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Leanne ",
+    "email": "Leanne@fakemail.org",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "albums": {
+      "album1": "albumOne",
+      "album2": "albumTwo",
+      "album3": "albumThree",
+      "album4": "albumFour"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mary",
+    "email": "Mary@fakemail.org",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "albums": {
+      "album1": "albumOne",
+      "album2": "albumTwo",
+      "album3": "albumThree",
+      "album4": "albumFour"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Möretz",
+    "email": "Möretz@fakemail.org",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "albums": {
+      "album1": "albumOne",
+      "album2": "albumTwo",
+      "album3": "albumThree",
+      "album4": "albumFour"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Leanne Graham",
+    "email": "Sincere@fakemail.org",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
+    "albums": {
+      "album1": "albumOne",
+      "album2": "albumTwo",
+      "album3": "albumThree",
+      "album4": "albumFour"
+    }
+  }
+]
