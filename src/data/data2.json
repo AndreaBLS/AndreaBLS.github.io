@@ -32,7 +32,7 @@
         "album1": {
           "albunName": "Canne a gogo",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2017
         },
         "album2": {
           "albunName": "Cannette",
@@ -53,7 +53,7 @@
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
       "albums": {
         "album1": {
-          "albunName": "Canne a gogo",
+          "albunName": "lorem15",
           "albumPrice": 5,
           "albumYear": 2019
         },
