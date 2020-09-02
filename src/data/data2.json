@@ -7,19 +7,24 @@
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
       "albums": {
         "album1": {
-          "albunName": "Canne a gogo",
+          "albumName": "Canne a gogo",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/150/150"
         },
         "album2": {
-          "albunName": "Cannette",
+          "albumName": "Cannette",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/150/150"
+
+          
         },
         "album3": {
-          "albunName": "La Minima",
+          "albumName": "La Minima",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/150/150"
         }
       }
     },
@@ -32,19 +37,24 @@
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
       "albums": {
         "album1": {
-          "albunName": "Canne a gogo",
+          "albumName": "Canne a gogo",
           "albumPrice": 5,
-          "albumYear": 2017
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         },
         "album2": {
-          "albunName": "Cannette",
+          "albumName": "Cannette",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
+
+          
         },
         "album3": {
-          "albunName": "La Minima",
+          "albumName": "La Minima",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         }
       }
     },
@@ -56,19 +66,24 @@
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
       "albums": {
         "album1": {
-          "albunName": "lorem15",
+          "albumName": "Canne a gogo",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         },
         "album2": {
-          "albunName": "Cannette",
+          "albumName": "Cannette",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
+
+          
         },
         "album3": {
-          "albunName": "La Minima",
+          "albumName": "La Minima",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         }
       }
     },
@@ -80,19 +95,24 @@
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aspernatur quod provident magni ipsum hic totam sequi velit sunt necessitatibus, quae quia perspiciatis molestiae? Nobis architecto impedit tempore inventore.",
       "albums": {
         "album1": {
-          "albunName": "Canne a gogo",
+          "albumName": "Canne a gogo",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         },
         "album2": {
-          "albunName": "Cannette",
+          "albumName": "Cannette",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
+
+          
         },
         "album3": {
-          "albunName": "La Minima",
+          "albumName": "La Minima",
           "albumPrice": 5,
-          "albumYear": 2019
+          "albumYear": 2019,
+          "albumImage" : "http://placekitten.com/g/200/300"
         }
       }
     }
