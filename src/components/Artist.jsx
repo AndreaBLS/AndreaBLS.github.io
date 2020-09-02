@@ -26,7 +26,11 @@ export default function Artist(props) {
           <div className="albumImage">
           <img src={props.location.artistData.albums.album1.albumImage}></img>
           </div>
+          <button className="button" onClick="">
+            <h3>Add to Cart</h3>
+          </button>
         </div>
+        
 
         <div>
           <h3>
@@ -39,6 +43,9 @@ export default function Artist(props) {
           <div className="albumImage">
           <img src={props.location.artistData.albums.album2.albumImage}></img>
           </div>
+          <button className="button" onClick="">
+            <h3>Add to Cart</h3>
+          </button>
         </div>
 
         <div>
@@ -52,6 +59,9 @@ export default function Artist(props) {
           <div className="albumImage">
           <img src={props.location.artistData.albums.album3.albumImage}></img>
           </div>
+          <button className="button" onClick="">
+            <h3>Add to Cart</h3>
+          </button>
         </div>
       </div>
     </div>
