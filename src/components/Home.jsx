@@ -11,7 +11,7 @@ export default function Home() {
             <h1>Quantum Records</h1>
             
              {artistData.map((item)=>{
-          return(<Card key={item.id} name={item.name} image={item.image} />)
+          return(<Card key={item.id} name={item.name} image={item.image} bio={item.bio} albums={item.albums}/>)
         })}
         </div>
     )

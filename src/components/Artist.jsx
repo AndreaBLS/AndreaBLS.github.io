@@ -1,16 +1,15 @@
-import React from 'react'
-
+import React from "react";
 
 export default function Artist(props) {
-    console.log(props)
-    return (
-        
-        <div>
-            <h1>Artist</h1>
-            <div className="ArtistImage">
-            {<img src={props.location.artistImage} alt="artist" />}
-            </div>
-            <h1></h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Artist</h1>
+      <div className="ArtistImage">
+        <img src={props.location.artistData.image} alt="artist" />
+      </div>
+      <h1>{props.location.artistData.name}</h1>
+      <p>{props.location.artistData.bio}</p>
+      
+    </div>
+  );
 }

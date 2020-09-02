@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 
 
-export default function Card ({ image, name }) {
+export default function Card ({ image, name, bio, albums }) {
 console.log(image)
   return (
     <div className="card">
       <div className="image">
-        <Link to={{ pathname: "/artist", artistImage: image }}>
+        <Link to={{ pathname: "/artist", artistData:{image,bio,name,albums }, }}>
           <div className="ArtistImage">
             <img src={image}  alt="imag44e" />
           </div>
