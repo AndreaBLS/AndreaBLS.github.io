@@ -16,6 +16,7 @@ export default function Home() {
             {images.map((item)=>{
                 return(<Card key={item} image={item}/>)
             })}
+            
         </div>
     )
 }

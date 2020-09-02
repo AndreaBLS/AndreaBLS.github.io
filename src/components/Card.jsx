@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-export default function ({image}) {
+export default function ({image, name}) {
 
   return (
     
@@ -16,7 +16,7 @@ export default function ({image}) {
       </div>
 
       <div className="content">
-        <p></p>
+  <h1>{name}</h1>
       </div>
     </div>
   );
