@@ -9,7 +9,9 @@ export default function ({image}) {
     <div className="card">
       <div className="image">
         <Link to={{pathname:"/artist",artistImage:image}}>
+          <div className="ArtistImage">
           <img src= {image} alt="image" />
+          </div>
         </Link>
       </div>
 
