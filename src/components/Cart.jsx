@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Cart() {
-    return (
-        <div>
-            <h1>Cart</h1>
-        </div>
-    )
+export default function Cart({amount}) {
+  return (
+    <div>
+      
+      <div className="display">
+        <h1>{amount}</h1>
+      </div>
+    </div>
+  );
 }

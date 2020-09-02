@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Artist(props) {
+export default function Artist(props, amount, incrementProps) {
   return (
     <div>
       <h2>{props.location.artistData.name}</h2>
