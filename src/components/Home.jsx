@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Card from"./Card";
-import Data from "../data/data2.json";
+import Data from "../data/data.json";
 
 
 
