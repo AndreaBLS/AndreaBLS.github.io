@@ -9,7 +9,7 @@
       {
         "albumArtist": "Graham",
         "albumName": "Canne a gogo",
-        "albumPrice": 5,
+        "albumPrice": 2,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/150/150"
       },
@@ -23,7 +23,7 @@
       {
         "albumArtist": "Graham",
         "albumName": "La Minima",
-        "albumPrice": 6,
+        "albumPrice": 20,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/150/150"
       }
@@ -70,21 +70,21 @@
       {
         "albumArtist" : "Möretz",
         "albumName": "Canne a gogo2",
-        "albumPrice": 5,
+        "albumPrice": 14,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       },
       {
         "albumArtist" : "Möretz",
         "albumName": "Cannette2",
-        "albumPrice": 5,
+        "albumPrice": 3,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       },
       {
         "albumArtist" : "Möretz",
         "albumName": "La Minima2",
-        "albumPrice": 5,
+        "albumPrice": 8,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       }
@@ -100,21 +100,21 @@
       {
         "albumArtist" : "Gilberto",
         "albumName": "Canne a gogo3",
-        "albumPrice": 5,
+        "albumPrice": 15,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       },
       {
         "albumArtist" : "Gilberto",
         "albumName": "Cannette3",
-        "albumPrice": 5,
+        "albumPrice": 9,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       },
       {
         "albumArtist" : "Gilberto",
         "albumName": "La Minima3",
-        "albumPrice": 5,
+        "albumPrice": 2,
         "albumYear": 2019,
         "albumImage": "http://placekitten.com/g/200/300"
       }

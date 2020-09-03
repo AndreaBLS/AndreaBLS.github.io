@@ -31,7 +31,7 @@ export default function Artist(props) {
                 </div>
                 <button 
                 className="button"
-                 onClick={() => {props.AddItem(album);props.addPrices()}}
+                 onClick={() => {props.AddItem(album)}}
                  
                 >
                   <h3>Add to Cart</h3>

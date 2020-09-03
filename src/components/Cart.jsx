@@ -1,12 +1,24 @@
-import React from "react";
+import React,{useState,useEffect,} from "react";
 
 export default function Cart({
   addedcartAlbums,
   deleteItem,
   resetCart,
   updatePrices,
-  total,
 }) {
+  const [total, setTotal] = useState(0)
+
+  useEffect(() => {
+   let totalPrice = addedcartAlbums.reduce((sum, item) => {
+     sum = sum + item.albumPrice
+     console.log(sum)
+    return sum
+   }, 
+   0)
+   setTotal(totalPrice)
+  }, [addedcartAlbums])
+
+
   return (
     <div>
       <div className="displayCart">
@@ -28,11 +40,11 @@ export default function Cart({
               <h2>{item.albumName}</h2>
               <h2>{item.albumYear}</h2>
               <h2>{item.albumPrice} €</h2>
+
               <button
                 className="removeBtn"
                 onClick={() => {
                   deleteItem(item.albumName);
-                  updatePrices(item.albumPrice);
                 }}
               >
                 <h2>Remove</h2>
