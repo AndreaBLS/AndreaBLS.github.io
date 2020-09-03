@@ -1,11 +1,12 @@
 import React from "react";
 
-export default function Cart({ addedcartAlbums, deleteItem}  ) {
+export default function Cart({ addedcartAlbums, deleteItem, total, deletePrices}  ) {
   console.log(addedcartAlbums);
   return (
     <div>
       <div className="displayCart">
         <h1>Total Items {addedcartAlbums && addedcartAlbums.length}</h1>
+        <h2>Total {total}</h2>
         <div className="cartHeaderContainer">
           <h2>Album Artist</h2>
           <h2>Album Name</h2>
@@ -23,7 +24,7 @@ export default function Cart({ addedcartAlbums, deleteItem}  ) {
               <h2>{item.albumPrice} €</h2>
               <button
                 className="removeBtn"
-                onClick={() => deleteItem(item.albumName)}
+                onClick={() => {deleteItem(item.albumName);deletePrices()}}
               >
                 <h2>Remove</h2>
               </button>

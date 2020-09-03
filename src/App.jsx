@@ -10,17 +10,34 @@ export default class App extends Component {
   state = {
     amount: 0,
     addedcartAlbums: [],
+    total: 0,
   };
 
-  deleteItem = (albumName) => {
-    const updatedItems = this.state.addedcartAlbums.filter((item) => item.albumName !== albumName);
-    this.setState(
-      {
-        addedcartAlbums: updatedItems,
-      },
-    );
+  addPrices = () => {
+    this.state.addedcartAlbums.map((item) => {
+      this.state.total = this.state.total + item.albumPrice;
+
+    });
   };
-  
+  deletePrices= (albumPrice)=>{
+    const updatePrices = this.state.addedcartAlbums.filter(
+      (item) => item.albumPrice !== albumPrice
+    );
+    this.setState({
+      albumPrice: updatePrices
+    })
+    
+
+  }
+
+  deleteItem = (albumName) => {
+    const updatedItems = this.state.addedcartAlbums.filter(
+      (item) => item.albumName !== albumName
+    );
+    this.setState({
+      addedcartAlbums: updatedItems,
+    });
+  };
 
   AddItem = (albumName) => {
     console.log(albumName);
@@ -40,21 +57,27 @@ export default class App extends Component {
 
               <Route
                 path="/cart"
-                render={(props) => 
+                render={(props) => (
                   <Cart
                     {...props}
                     addedcartAlbums={this.state.addedcartAlbums}
                     deleteItem={this.deleteItem}
+                    deletePrices={this.deletePrices}
+                    total={this.state.total}
                   />
-                }
+                )}
               />
 
               <Route
                 exact
                 path="/artist"
-                render={(props) => <Artist 
-                  {...props}
-                   AddItem={this.AddItem} />}
+                render={(props) => (
+                  <Artist
+                    {...props}
+                    AddItem={this.AddItem}
+                    addPrices={this.addPrices}
+                  />
+                )}
               />
             </Switch>
           </header>

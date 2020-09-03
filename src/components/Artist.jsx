@@ -31,10 +31,12 @@ export default function Artist(props) {
                 </div>
                 <button 
                 className="button"
-                 onClick={() => props.AddItem(album)}
+                 onClick={() => {props.AddItem(album);props.addPrices()}}
+                 
                 >
                   <h3>Add to Cart</h3>
                 </button>
+
               </div>
             );
           })}
