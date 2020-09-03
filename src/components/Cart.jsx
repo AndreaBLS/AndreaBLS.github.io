@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Cart({amount}) {
+export default function Cart({addedcartAlbums}) {
   return (
     <div>
       
       <div className="display">
-        <h1>{amount}</h1>
+        <h1>{addedcartAlbums&&addedcartAlbums.length}</h1>
       </div>
     </div>
   );
