@@ -9,9 +9,14 @@ import "./App.scss";
 export default class App extends Component {
   state = {
     amount: 0,
+    addedcartAlbums: [],
   };
-  increment = () => {
-    this.setState(this.state.amount + 1);
+
+  AddItem = (albumName) => {
+    console.log(albumName);
+    this.setState({
+      addedcartAlbums: [...this.state.addedcartAlbums, albumName],
+    });
   };
 
   render() {
@@ -22,14 +27,23 @@ export default class App extends Component {
           <header className="App-header">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/cart" component={Cart} />
-              <Route exact path="/artist" component={Artist} />
-            </Switch>
-            <Cart amount={this.state.amount} 
-            incrementProps={this.increment}/>
-            {/* <Artist amount={this.state.amount} 
-            incrementProps={this.increment}/> */}
 
+              <Route
+                path="/cart"
+                render={(props) => (
+                  <Cart
+                    {...props}
+                    addedcartAlbums={this.state.addedcartAlbums}
+                  />
+                )}
+              />
+
+              <Route
+                exact
+                path="/artist"
+                render={(props) => <Artist {...props} AddItem={this.AddItem} />}
+              />
+            </Switch>
           </header>
         </div>
       </Router>

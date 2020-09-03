@@ -1,68 +1,43 @@
 import React from "react";
 
-export default function Artist(props, amount, incrementProps) {
+export default function Artist(props) {
+  console.log(props)
   return (
+
     <div>
-      <h2>{props.location.artistData.name}</h2>
+      <h2>{props.location.artistData&&props.location.artistData.name}</h2>
 
       <div className="artistBigContainer">
         <div className="artistImage2">
-          <img src={props.location.artistData.image} alt="artist" />
+          <img src={props.location.artistData&&props.location.artistData.image} alt="artist" />
         </div>
 
         <div className="bioContainer">
-          <p>{props.location.artistData.bio}</p>
+          <p>{props.location.artistData&&props.location.artistData.bio}</p>
         </div>
       </div>
       <div className="albumContainer">
-        <div>
-          <h3>
-            Album Name: {props.location.artistData.albums.album1.albumName}
-          </h3>
-          <h3>Price: {props.location.artistData.albums.album1.albumPrice}€</h3>
-          <h3>
-            Release Year: {props.location.artistData.albums.album1.albumYear}
-          </h3>
-          <div className="albumImage">
-          <img src={props.location.artistData.albums.album1.albumImage}></img>
+        {props.location.artistData&&props.location.artistData.albums.map(album=>  {
+          return (
+            <div key={album.albumName}>
+            <h3>
+              Album Name: {album.albumName}
+            </h3>
+            <h3>Price: {album.albumPrice}€</h3>
+            <h3>
+              Release Year: {album.albumYear}
+            </h3>
+            <div className="albumImage">
+            <img src={album.albumImage}></img>
+            </div>
+            <button className="button" onClick={()=> props.AddItem(album) }>
+              <h3>Add to Cart</h3>
+            </button>
           </div>
-          <button className="button" onClick="">
-            <h3>Add to Cart</h3>
-          </button>
-        </div>
+          )
+        })}
         
 
-        <div>
-          <h3>
-            Album Name: {props.location.artistData.albums.album2.albumName}
-          </h3>
-          <h3>Price: {props.location.artistData.albums.album2.albumPrice}€</h3>
-          <h3>
-            Release Year: {props.location.artistData.albums.album2.albumYear}
-          </h3>
-          <div className="albumImage">
-          <img src={props.location.artistData.albums.album2.albumImage}></img>
-          </div>
-          <button className="button" onClick="">
-            <h3>Add to Cart</h3>
-          </button>
-        </div>
-
-        <div>
-          <h3>
-            Album Name: {props.location.artistData.albums.album3.albumName}
-          </h3>
-          <h3>Price: {props.location.artistData.albums.album3.albumPrice}€</h3>
-          <h3>
-            Release Year: {props.location.artistData.albums.album3.albumYear}
-          </h3>
-          <div className="albumImage">
-          <img src={props.location.artistData.albums.album3.albumImage}></img>
-          </div>
-          <button className="button" onClick="">
-            <h3>Add to Cart</h3>
-          </button>
-        </div>
       </div>
     </div>
   );
