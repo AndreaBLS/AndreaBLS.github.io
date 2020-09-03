@@ -9,7 +9,29 @@ import "./App.scss";
 export default class App extends Component {
   state = {
     amount: 0,
-    addedcartAlbums: [],
+    addedcartAlbums: [
+      {
+        "albumArtist": "Graham",
+        "albumName": "Canne a gogo",
+        "albumPrice": 5,
+        "albumYear": 2019,
+        "albumImage": "http://placekitten.com/g/150/150"
+      },
+      {
+        "albumArtist": "Graham",
+        "albumName": "Cannette",
+        "albumPrice": 5,
+        "albumYear": 2019,
+        "albumImage": "http://placekitten.com/g/150/150"
+      },
+      {
+        "albumArtist": "Graham",
+        "albumName": "La Minima",
+        "albumPrice": 5,
+        "albumYear": 2019,
+        "albumImage": "http://placekitten.com/g/150/150"
+      }
+    ],
   };
 
   AddItem = (albumName) => {
