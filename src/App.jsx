@@ -9,30 +9,18 @@ import "./App.scss";
 export default class App extends Component {
   state = {
     amount: 0,
-    addedcartAlbums: [
-      {
-        "albumArtist": "Graham",
-        "albumName": "Canne a gogo",
-        "albumPrice": 5,
-        "albumYear": 2019,
-        "albumImage": "http://placekitten.com/g/150/150"
-      },
-      {
-        "albumArtist": "Graham",
-        "albumName": "Cannette",
-        "albumPrice": 5,
-        "albumYear": 2019,
-        "albumImage": "http://placekitten.com/g/150/150"
-      },
-      {
-        "albumArtist": "Graham",
-        "albumName": "La Minima",
-        "albumPrice": 5,
-        "albumYear": 2019,
-        "albumImage": "http://placekitten.com/g/150/150"
-      }
-    ],
+    addedcartAlbums: [],
   };
+
+  deleteItem = (albumName) => {
+    const updatedItems = this.state.addedcartAlbums.filter((item) => item.albumName !== albumName);
+    this.setState(
+      {
+        addedcartAlbums: updatedItems,
+      },
+    );
+  };
+  
 
   AddItem = (albumName) => {
     console.log(albumName);
@@ -52,18 +40,21 @@ export default class App extends Component {
 
               <Route
                 path="/cart"
-                render={(props) => (
+                render={(props) => 
                   <Cart
                     {...props}
                     addedcartAlbums={this.state.addedcartAlbums}
+                    deleteItem={this.deleteItem}
                   />
-                )}
+                }
               />
 
               <Route
                 exact
                 path="/artist"
-                render={(props) => <Artist {...props} AddItem={this.AddItem} />}
+                render={(props) => <Artist 
+                  {...props}
+                   AddItem={this.AddItem} />}
               />
             </Switch>
           </header>
