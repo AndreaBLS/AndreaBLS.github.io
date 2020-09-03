@@ -1,12 +1,11 @@
 import React from "react";
 
-export default function Cart({ addedcartAlbums }) {
+export default function Cart({ addedcartAlbums, deleteItem}  ) {
   console.log(addedcartAlbums);
-  console.log();
   return (
     <div>
       <div className="displayCart">
-        <h1>{addedcartAlbums && addedcartAlbums.length}</h1>
+        <h1>Total Items {addedcartAlbums && addedcartAlbums.length}</h1>
         <div className="cartHeaderContainer">
           <h2>Album Artist</h2>
           <h2>Album Name</h2>
@@ -22,6 +21,12 @@ export default function Cart({ addedcartAlbums }) {
               <h2>{item.albumName}</h2>
               <h2>{item.albumYear}</h2>
               <h2>{item.albumPrice} €</h2>
+              <button
+                className="removeBtn"
+                onClick={() => deleteItem(item.albumName)}
+              >
+                <h2>Remove</h2>
+              </button>
               <div className="cartAlbumContainer">
                 <img src={item.albumImage} alt="" />
               </div>
