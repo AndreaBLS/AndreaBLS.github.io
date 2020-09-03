@@ -16,19 +16,18 @@ export default class App extends Component {
   addPrices = () => {
     this.state.addedcartAlbums.map((item) => {
       this.state.total = this.state.total + item.albumPrice;
-
     });
   };
-  deletePrices= (albumPrice)=>{
-    const updatePrices = this.state.addedcartAlbums.filter(
-      (item) => item.albumPrice !== albumPrice
-    );
+
+  updatePrices = (albumPrice) => {
+    const updatedPrices = this.state.total - albumPrice;
+    console.log(albumPrice);
     this.setState({
-      albumPrice: updatePrices
+      total: updatedPrices,
     })
     
-
-  }
+    
+  };
 
   deleteItem = (albumName) => {
     const updatedItems = this.state.addedcartAlbums.filter(
@@ -62,7 +61,7 @@ export default class App extends Component {
                     {...props}
                     addedcartAlbums={this.state.addedcartAlbums}
                     deleteItem={this.deleteItem}
-                    deletePrices={this.deletePrices}
+                    updatePrices={this.updatePrices}
                     total={this.state.total}
                   />
                 )}
